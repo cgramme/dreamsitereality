@@ -4,21 +4,78 @@
 	<link rel='stylesheet' href='business.css'>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js" type='text/javascript'></script>
+	<script type='text/javascript' src='business.js'></script>
 </head>
 <body>
 	<div class='fixed-content'>
 	<div class='header'>
 		<button onclick="location.href='index.html'" type='button'><i class='fa fa-undo'></i> Dreamsite Reality</button>
-		<h1>Strive to thrive</h1>
+		<img src='images/intergalacticLogo.png' alt='strive to thirive logo'>
 	</div>
 		<div class='side-options'>
 			<div class='side-border2'></div>
 			<div class='side-border'></div>
+			<div class='nav-info'>
+				<h3>Flight setup</h3>
+				<h4>Destination</h4>
+				<select>
+                	<option value="" disabled selected>Select destination...</option> 
+					<option>Moon</option>
+					<option>Mars</option>
+					<option>Triton</option>
+					<option>Alpha Centauri</option>
+				</select>
+				<h4># of passengers</h4>
+				<select>
+                	<option value="" disabled selected>Select passengers...</option> 
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+				</select>
+				<h4>Choose vehicle</h4>
+				<select>
+                	<option value="" disabled selected>Select vehicle...</option> 
+					<option>Hydrogen Capsule</option>
+					<option>Nucler Rocket</option>
+					<option>Starship Enterprise</option>
+					<option>Homemade Spaceship</option>
+				</select>
+				<h4>Launch date</h4>
+				<input type="date">
+				<h5>Do you agree to the<br>terms and conditions</h5>
+				<input id='terms-checkbox' type='checkbox'>
+				<button type='button'>Submit</button>
+
+
+			</div>
+			
+			<ul class='nav-bar'>
+				<li><i class='fa fa-rocket'></i> Book Flight</li>
+				<li>Details</li>
+				<li>About</li>
+			</ul>
 		</div>	
 	<div class='side-drop'></div>
 	</div>	
 	<div class='main-content'>
-		<h2>Take control of your business's destination</h2>
+		<div class='destinations'>
+		<h1>Book your intergalactic adventure today!</h1>
+		<h2>Destinations:</h2>	
+		<h3>Moon:</h3>
+		<h4>Most popular human destination. Makes a great weekend getaway!</h4>
+		<h3>Mars:</h3>
+		<h4>Home of the best permafrost slushies in the solar system!</h4>
+		<h3>Triton:</h3>
+		<h4>Take a dip in an invigorating methane lake. Worth the travel time!</h4>
+		<h3>Alpha Centauri:</h3>
+		<h4>Be a pioneer of the galaxy... and don't forget to pack a lunch!</h4>
+		</div>
+		<h5>Disclaimer: We take no responsibility for any harm you may be subject to durring your travels. This includes but is not limited to... Freezing, burning, loss of oxygen, disease, sickness, starving, radiation, suction into black hole, explosion ect... We stand proudly by our 5% succes rate!  </h5>
 	</div>
 </body>
 </html>
