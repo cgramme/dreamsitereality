@@ -24,16 +24,16 @@
 			<div class='nav-info'>
 				<h3>Flight setup</h3>
 				<h4>Destination</h4>
-				<select>
-                	<option value="" disabled selected>Select destination...</option> 
+				<select class='destination'>
+                	<option value='0'>Select destination...</option> 
 					<option>Moon</option>
 					<option>Mars</option>
-					<option>Triton</option>
+					<option>Titan</option>
 					<option>Alpha Centauri</option>
 				</select>
 				<h4># of passengers</h4>
-				<select>
-                	<option value="" disabled selected>Select passengers...</option> 
+				<select class='passengers'>
+                	<option value='0'>Select passengers...</option> 
 					<option>1</option>
 					<option>2</option>
 					<option>3</option>
@@ -44,20 +44,20 @@
 					<option>8</option>
 				</select>
 				<h4>Choose vehicle</h4>
-				<select>
-                	<option value="" disabled selected>Select vehicle...</option> 
+				<select class='vehicle'>
+                	<option value='0'>Select vehicle...</option> 
 					<option>Hydrogen Capsule</option>
-					<option>Nucler Rocket</option>
+					<option>Nuclear Rocket</option>
 					<option>Starship Enterprise</option>
 					<option>Homemade Spaceship</option>
-					<option>Millennium falcon</option>
+					<option>Millennium Falcon</option>
 					<option>Death Star</option>
 				</select>
 				<h4>Launch date</h4>
-				<input type="date">
+				<input class='date' type='date'>
 				<h5>Do you agree to the<br>terms and conditions</h5>
-				<input id='terms-checkbox' type='checkbox'>
-				<button type='button'>Submit</button>
+				<input class='checked' type='checkbox'>
+				<button class='submit' type='button'>Submit</button>
 
 
 			</div>
@@ -70,7 +70,25 @@
 		</div>	
 	<div class='side-drop'></div>
 	</div>	
+	<div class='submit-page'>
+	<h3>Thank you for choosing Intergalactic Adventures!</h3>
+	<div class='left-side'>
+		<h4 class='final-vehicle'>vehcile of choice</h4><img class='vehicleImg' src='images/rocket.jpg' alt='vehicle'>
+		<h4 class='final-passengers'>number of passengers</h4>
+		<div class='people'>
+			
+		</div>
+	</div>
+	<div class='right-side'>
+		<h4 class='final-destination'>your destination is</h4><img class='planet' src='images/moon.jpg' alt='destination'>
+		<h4>Launch date:</h4>
+		<h3 class='final-date'></h3>
+	</div>
+		<h3 class='countdown'>Countdown<br>34:41:13</h3>
+		<div class='clear'></div>
+	</div>
 	<div class='main-content'>
+	
 		<div class='destinations'>
 		<h1>Book your intergalactic adventure today!</h1>
 		<h2>Destinations:</h2>	
@@ -78,19 +96,35 @@
 		<h4 class='dood'>Most popular human destination. Makes a great weekend getaway!</h4>
 		<h3><img src='images/flame.png' alt='flame'><i class='fa fa-rocket'></i> Mars:</h3>
 		<h4>Home of the best permafrost slushies in the solar system!</h4>
-		<h3><img src='images/flame.png' alt='flame'><i class='fa fa-rocket'></i> Triton:</h3>
+		<h3><img src='images/flame.png' alt='flame'><i class='fa fa-rocket'></i> Titan:</h3>
 		<h4>Take a dip in an invigorating methane lake. Worth the travel time!</h4>
 		<h3><img src='images/flame.png' alt='flame'><i class='fa fa-rocket'></i> Alpha Centauri:</h3>
 		<h4>Be a pioneer of the galaxy... and don't forget to pack a lunch!</h4>
 		</div>
 		<div class='testimony'>
 			<h2>Testimony</h2>
+			<div class='a-testimony'>
 			<img src='images/sunburn.jpg' alt='sunburn'>
-			<h3>Radiation Steve aka "Rad" Steve</h3>
-			<h4>I had the greatest time in outer space! My friends and I have been talking about this this vacation for the longest time and it finally happened! Besides the bumpy ride, solar flares, gamma rays, radiation and 30G acceleration at times it was the perfect 25 year get away!</h4>
+			<h3>Rad Chad aka "Radiation" Chad</h3>
+			<h4>I had the greatest time in outer space! My friends and I have been talking about this vacation for the longest time and it finally happened! Besides the bumpy ride, solar flares, gamma rays, radiation and 30G acceleration at times it was the perfect 25 year get away!</h4>
+			<div class='clear'></div>
+			</div>
+			<div class='a-testimony'>
+			<img src='images/old_man.jpg' alt='doc'>
+			<h3>Doc</h3>
+			<h4>My homemade spaceship worked like a charm! The only thing more invigorating than Titans methane lakes is the feeling of 1.21 gigawatts strapped to a cardboard box! Thank the extraterrestials for Titans high speed internet access...</h4>
+			<div class='clear'></div>
+			</div>
+			<div class='a-testimony'>
+			<img src='images/cast.jpg' alt='cast'>
+			<h3>Tom Cruise</h3>
+			<h5>"Edited by moderator"</h5>
+			<h4>Everything went perfectly... I don't know what my favorite part was, maybe all the wonderful views or the delecious snacks. I finally got to meet the extraterrestials! Maybe someday I myself will be an extraterrestial.</h4>
+			<div class='clear'></div>
+			</div>
 			<div class='clear'></div>
 		</div>
-		<h5>Disclaimer: We take no responsibility for any harm you may be subjected to during your travels. This includes but is not limited to... Freezing, burning, loss of oxygen, disease, sickness, starving, radiation, suction into black hole, explosion etc... We stand proudly by our 0.06% succes rate!  </h5>
+		<h5>Disclaimer: We take no responsibility for any harm you may be subject to during your travels. This includes but is not limited to... Freezing, burning, loss of oxygen, disease, sickness, starving, radiation, suction into black hole, explosion etc... We stand proudly by our 0.06% succes rate!  </h5>
 	</div>
 </body>
 </html>
