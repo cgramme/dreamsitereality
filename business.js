@@ -107,7 +107,7 @@ $(window).resize(function(){
 
 function resize(){
 	if($('body').width() < 1150){
-		$('.main-content').css({'padding-top':($('.header').height() + $('.side-options').height()+50)+'px'});
+	
 	}else{
 		$('.main-content').css({'padding-top':0+'px'});
 	}
