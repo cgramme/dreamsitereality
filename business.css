@@ -212,9 +212,11 @@ input[type=checkbox]{
 	border: 5px solid #fff;
 	float: left;
 	margin: 10px;
+	display: inline-block;
+	border: 1px solid red;
 }
 .testimony h4{
-	margin: 20px 0 0 190px;
+	border: 1px solid red;
 }
 .testimony h2{
 	margin: 10px 0 0 25px;
@@ -341,7 +343,6 @@ input[type=checkbox]{
 	.main-content{
 		float: none;
 		margin: 0 auto;
-		border: 1px solid red;
 	}
 	.main-content .destinations{
 		margin-top: 20px;
@@ -428,6 +429,13 @@ input[type=checkbox]{
 	}
 	.header button{
 		display: none;
+	}
+	.destinations h1{
+		font-size: 20px;
+	}
+	.testimony img{
+		height: 60px;
+		width: 60px;
 	}
 }
 
