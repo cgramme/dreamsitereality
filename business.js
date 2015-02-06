@@ -1,3 +1,6 @@
+var headerHeight, navHeight;
+
+
 
 
 $(document).ready(function(){
@@ -10,7 +13,7 @@ $(document).ready(function(){
 
 
          
-         $('.side-options li:first-child').removeClass('hover-on');
+      /*   $('.side-options li:first-child').removeClass('hover-on');
          
          if($(this).hasClass('details')){
          	$('.nav-info').hide();
@@ -18,11 +21,11 @@ $(document).ready(function(){
          }else{
          	$('.nav-info').hide();
          	$('.nav-about').slideDown();
-         }
+         } */
 	}).mouseleave(function(){
-		$('.side-options li:first-child').addClass('hover-on');
+		/*$('.side-options li:first-child').addClass('hover-on');
 		$('.nav-details,.nav-about').hide();
-		$('.nav-info').slideDown();
+		$('.nav-info').slideDown();*/
 	});
 
 
@@ -72,10 +75,18 @@ $(document).ready(function(){
 			$('.final-passengers').html('Passengers:');
 			$('.final-vehicle').text('Spacecraft:');
 			$('.final-date').html(myDate);
-			for(i=0;i<myPassNumber;i++){
-				$('.people').prepend('<i id="person" class="fa fa-male"></i>');
-			}
+			$('.people').empty();
+				for(i=0;i<myPassNumber;i++){
+					$('.people').prepend('<i id="person" class="fa fa-male"></i>');
+				}
+			
+			
 			$('.submit-page').fadeIn(1000);
+
+
+			$('#counter').countdown(myDate, function(event) {
+            $('#counter').html(event.strftime('%w weeks %d days %H:%M:%S'));
+            });
 
 
 		}else{
@@ -86,4 +97,18 @@ $(document).ready(function(){
 	});
 
 
+	resize();
+
 });
+
+$(window).resize(function(){
+	resize();
+});
+
+function resize(){
+	if($('body').width() < 1150){
+		$('.main-content').css({'padding-top':($('.header').height() + $('.side-options').height()+50)+'px'});
+	}else{
+		$('.main-content').css({'padding-top':0+'px'});
+	}
+}

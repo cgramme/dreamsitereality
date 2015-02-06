@@ -36,7 +36,7 @@ body{
 }
 .side-drop{
 	width: 150px;
-	height: 200px;
+	height: 2000px;
 	background-color: #0a0600;
 	border-right: 5px solid #fff;
 }
@@ -226,7 +226,7 @@ input[type=checkbox]{
 	border: 1px solid transparent;
 }
 .clear{
-	clear:both;
+	clear: both;
 }
 .submit-page{
 	background-color: hsla(0, 100%, 0%, 0.7);
@@ -251,6 +251,14 @@ input[type=checkbox]{
 .submit-page h4{
 	color: #fff;
 	font-size: 14px;
+}
+.submit-page .details-below{
+	font-size: 16px;
+	color: #d3c39b;
+	margin-top: 30px;
+	margin-bottom: -10px;
+	text-align: left;
+	margin-left: 30px;
 }
 .planet{
 	height: 170px;
@@ -305,11 +313,95 @@ input[type=checkbox]{
 	float: right;
 }
 .submit-page .countdown{
-	padding: 20px;
+	font-size: 28px;
+	padding: 20px 0 0 10px;
 	margin: 200px 0 0 0;
 	clear: both;
 }
+#counter{
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	color: #fff;
+	margin: 0 5px 5px 5px;
+	text-shadow: 0 0 10px #000;
+	padding: 5px;
+}
+
+@media screen and (max-width: 1300px){
+	.main-content{
+	float: right;
+	width: 800px;
+	margin: 140px 50px 0 0;
+}
+}
+
+@media screen and (max-width: 1150px){
+
+	.main-content{
+		float: none;
+		margin: 0 auto;
+		padding-top: 140px;
+	}
+
+	.side-border, .side-border2, .side-drop, .nav-bar{
+		display: none;
+	}
+	.side-options{
+	margin-top: 0px;
+	width: 100%;
+	height: auto;
+	position: relative;
+	background-color: #000;
+	border-bottom: 1px solid #fff;
+    }
+    #terms{
+    	width: 200px;
+    	display: inline-block;
+    }
+    #group-one{
+    	display: inline-block;
+    }
+    #destinations, #passengers, #vehicle, #date, #submit{
+    	display: inline-block;
+    	padding-right: 10px;
+    }
+    
+    .nav-info{
+    	padding: 0;
+    	position: relative;
+    }
 
 
+}
+
+@media screen and (max-width: 850px){
+	.main-content{
+		float: none;
+		margin: 0 auto;
+		width: 95%;
+	}
+	.header button{
+		display: none;
+	}
+	.main-content .destinations{
+		border-radius: 50px;
+	}
+	#group-one{
+		display: inline-block;
+		float: left;
+	}
+	#destinations, #vehicle, #passengers, #date{
+		margin-left: 20px;
+		clear: both;
+		border: 1px solid red;
+	}
+	
+	#terms-submit{
+		display: inline-block;
+		border: 1px solid red;
+		margin-left: 20px;
+	}
+}
 
 

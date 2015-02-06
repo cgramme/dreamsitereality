@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel='stylesheet' href='business.css'>
+	<link rel='stylesheet' href='business.css' media="screen">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js" type='text/javascript'></script>
+	<script src="jquery.countdown.js"></script>
 	<script type='text/javascript' src='business.js'></script>
 </head>
 <body>
@@ -15,7 +16,7 @@
 		<div class='side-options'>
 			<div class='side-border2'></div>
 			<div class='side-border'></div>
-			<div class='nav-details'>
+			<div id='details' class='nav-details'>
 				<h4>Intergalactic Adventures has launched 39452<br>vacations with aprox. 24 successful<br>returns! You will be safely bolted to<br>the space vehicle of your choice<br>and exploded into oblivion.<br>Free unlimited snackbar<br>while supplies last!<br>Book now!</h4>
 			</div>
 			<div class='nav-about'>
@@ -23,6 +24,8 @@
 			</div>
 			<div class='nav-info'>
 				<h3>Flight setup</h3>
+				<div id='group-one'>
+				<div id='destinations'>
 				<h4>Destination</h4>
 				<select class='destination'>
                 	<option value='0'>Select destination...</option> 
@@ -31,6 +34,8 @@
 					<option>Titan</option>
 					<option>Alpha Centauri</option>
 				</select>
+				</div>
+				<div id='passengers'>
 				<h4># of passengers</h4>
 				<select class='passengers'>
                 	<option value='0'>Select passengers...</option> 
@@ -43,6 +48,9 @@
 					<option>7</option>
 					<option>8</option>
 				</select>
+				</div>
+				</div>
+				<div id='vehicle'>
 				<h4>Choose vehicle</h4>
 				<select class='vehicle'>
                 	<option value='0'>Select vehicle...</option> 
@@ -53,11 +61,21 @@
 					<option>Millennium Falcon</option>
 					<option>Death Star</option>
 				</select>
+				</div>
+				<div id='date'>
 				<h4>Launch date</h4>
 				<input class='date' type='date'>
+				</div>
+				<div id='terms-submit'>
+				<div id='terms'>
 				<h5>Do you agree to the<br>terms and conditions</h5>
 				<input class='checked' type='checkbox'>
+				</div>
+				<div id='submit'>
 				<button class='submit' type='button'>Submit</button>
+				</div>
+				</div>
+				
 
 
 			</div>
@@ -67,11 +85,13 @@
 				<li class='details'>Details</li>
 				<li class='about'>About</li>
 			</ul>
+			
 		</div>	
 	<div class='side-drop'></div>
 	</div>	
 	<div class='submit-page'>
 	<h3>Thank you for choosing Intergalactic Adventures!</h3>
+	<h3 class='details-below'>Flight details:</h3>
 	<div class='left-side'>
 		<h4 class='final-vehicle'>vehcile of choice</h4><img class='vehicleImg' src='images/rocket.jpg' alt='vehicle'>
 		<h4 class='final-passengers'>number of passengers</h4>
@@ -84,7 +104,8 @@
 		<h4>Launch date:</h4>
 		<h3 class='final-date'></h3>
 	</div>
-		<h3 class='countdown'>Countdown<br>34:41:13</h3>
+		<h3 class='countdown'>Countdown:</h3>
+		<div id='counter'></div>
 		<div class='clear'></div>
 	</div>
 	<div class='main-content'>
@@ -112,14 +133,14 @@
 			<div class='a-testimony'>
 			<img src='images/old_man.jpg' alt='doc'>
 			<h3>Doc</h3>
-			<h4>My homemade spaceship worked like a charm! The only thing more invigorating than Titans methane lakes is the feeling of 1.21 gigawatts strapped to a cardboard box! Thank the extraterrestials for Titans high speed internet access...</h4>
+			<h4>My homemade spaceship worked like a charm! The only thing more invigorating than Titans methane lakes is the feeling of 1.21 gigawatts strapped to a cardboard box! Thank the extraterrestrials for Titans high speed internet access...</h4>
 			<div class='clear'></div>
 			</div>
 			<div class='a-testimony'>
 			<img src='images/cast.jpg' alt='cast'>
 			<h3>Tom Cruise</h3>
 			<h5>"Edited by moderator"</h5>
-			<h4>Everything went perfectly... I don't know what my favorite part was, maybe all the wonderful views or the delecious snacks. I finally got to meet the extraterrestials! Maybe someday I myself will be an extraterrestial.</h4>
+			<h4>Everything went perfectly... I don't know what my favorite part was, maybe all the wonderful views or the delecious snacks. I finally got to meet the extraterrestrials!</h4>
 			<div class='clear'></div>
 			</div>
 			<div class='clear'></div>
