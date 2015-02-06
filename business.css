@@ -412,7 +412,7 @@ input[type=checkbox]{
 	}
 }
 
-@media (webkit-min-device-pixel-ratio: 1.2), (max-width: 192dpi){
+@media screen and (max-width: 600px){
 	
 	.header img{
 		width: 100%;
