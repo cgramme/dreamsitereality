@@ -408,5 +408,16 @@ input[type=checkbox]{
 	.nav-info h4, .nav-info h3{
 		font-size: 30px;
 	}
+	.main-content{
+		float: none;
+		margin: 0 auto;
+		width: 95%;
+	}
+	.main-content .destinations{
+		border-radius: 50px;
+	}
+	.header button{
+		display: none;
+	}
 }
 
