@@ -410,6 +410,9 @@ input[type=checkbox]{
 	.header img{
 		width: 90%;
 	}
+	.sumbit-page{
+		width: 98%;
+	}
 }
 
 @media screen and (max-width: 600px){
