@@ -356,7 +356,7 @@ input[type=checkbox]{
 	width: 100%;
 	height: auto;
 	position: relative;
-	background-color: #000;
+	background-color: #0a0600;
 	border-bottom: 1px solid #fff;
     }
     #terms{
@@ -429,7 +429,7 @@ input[type=checkbox]{
 		display: none;
 	}
 	#main-content .destinations{
-		padding: 0;
+		padding: 20px 5px 20px 5px;
 	}
 	#main-content h1{
 		font-size: 20px;
@@ -438,8 +438,8 @@ input[type=checkbox]{
 		padding: 0px 0px 30px 0px;
 	}
 	.testimony img{
-		height: 50px;
-		width: 50px;
+		height: 120px;
+		width: 120px;
 	}
 }
 
