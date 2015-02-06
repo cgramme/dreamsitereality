@@ -428,10 +428,14 @@ input[type=checkbox]{
 	.header button{
 		display: none;
 	}
-	#main-content .destinations{
+	.main-content .destinations{
 		padding: 20px 5px 20px 5px;
 	}
-	#main-content h1{
+	.main-content h1{
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+	.main-content h2{
 		font-size: 20px;
 	}
 	.testimony{
