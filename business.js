@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 
          
-      /*   $('.side-options li:first-child').removeClass('hover-on');
+         $('.side-options li:first-child').removeClass('hover-on');
          
          if($(this).hasClass('details')){
          	$('.nav-info').hide();
@@ -21,11 +21,17 @@ $(document).ready(function(){
          }else{
          	$('.nav-info').hide();
          	$('.nav-about').slideDown();
-         } */
+         } 
 	}).mouseleave(function(){
-		/*$('.side-options li:first-child').addClass('hover-on');
+		$('.side-options li:first-child').addClass('hover-on');
 		$('.nav-details,.nav-about').hide();
-		$('.nav-info').slideDown();*/
+		$('.nav-info').slideDown();
+	});
+
+	$('.submit-page .continue').click(function(){
+		$('.submit-page').hide();
+		$('.main-content').show();
+		$('.side-options').show();
 	});
 
 
@@ -36,19 +42,19 @@ $(document).ready(function(){
 		var myDate = $('.date').val();
 		if(myDestination!=0&myPassNumber!=0&myVehicle!=0&myDate!=''&$('.checked').is(':checked')){
 			$('.main-content').hide();
+			if($('body').width() < 1150){
+				$('.side-options').hide();
+			}
+			
 
 
 			if(myDestination=='Alpha Centauri'){
-				destinationImg='alphaCentauri';
 				$(".planet").attr('src','images/alphaCentauri.jpg');
 			}else if(myDestination=='Titan'){
-				destinationImg='triton';
 				$(".planet").attr('src','images/triton.jpg');
 			}else if(myDestination=='Mars'){
-				destinationImg='mars';
 				$(".planet").attr('src','images/mars.jpg');
 			}else{
-				destinationImg='moon';
 				$(".planet").attr('src','images/moon.jpg');
 			}
 
