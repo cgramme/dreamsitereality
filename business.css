@@ -3,11 +3,13 @@ html, body, h1, h2, h3, h4, h5, li, ul, ol, input{
 	margin: 0;
 	padding: 0;
 }
-
+html{
+	font-family:Helvetica, Arial, sans-serif;
+}
 #background {
                 background: url('images/space.jpg') no-repeat center center fixed;
                 position: fixed;
-                background-size: 100% 100%;
+                background-size: 100% auto;
                 -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
