@@ -3,19 +3,17 @@ html, body, h1, h2, h3, h4, h5, li, ul, ol, input{
 	margin: 0;
 	padding: 0;
 }
-html{
+
+body{
 	font-family:Helvetica, Arial, sans-serif;
-}
-#background {
-                background: url('images/space.jpg') no-repeat;
-                position: fixed;
-                background-size: 100% 100%;
+	background: url('images/space.jpg') no-repeat center center fixed;
+	background-size: 100% 100%;
                 top: -69px;
                 left: 0;
                 right: 0;
                 bottom: -69px;
                 z-index: -10;
-            }
+}
 .fixed-content{
 	position: fixed;
 	width: 100%;
