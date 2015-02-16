@@ -1,4 +1,4 @@
-var headerHeight, navHeight;
+var headerHeight, navHeight, $submitClone;
 
 
 
@@ -29,6 +29,7 @@ $(document).ready(function(){
 	});
 
 	$('.submit-page .continue').click(function(){
+		var $submitClone = $('.submit-page').children().clone(true,true);
 		$('.submit-page').empty();
 		$('.submit-page').prepend($('<div class=\'loader\'> new div </div>'));
 		$('.submit-page').append($('<h2 class=\'prepping-flight\'> Your flight is being prepared... </h2>'));
@@ -36,6 +37,9 @@ $(document).ready(function(){
 			$('.submit-page').hide();
 			$('.main-content').fadeIn(1000);
 			$('.side-options').fadeIn(1000);
+			$('.submit-page').empty();
+			$('.submit-page').prepend($submitClone);
+			
 		},2000)
 	
 	});
