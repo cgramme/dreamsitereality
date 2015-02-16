@@ -5,7 +5,7 @@ html, body, h1, h2, h3, h4, h5, li, ul, ol, input{
 }
 
 #background {
-                background: url('images/space.jpg') no-repeat fixed;
+                background: url('images/space.jpg') no-repeat center center fixed;
                 position: fixed;
                 background-size: 100% 100%;
                 -webkit-background-size: cover;
@@ -15,7 +15,7 @@ html, body, h1, h2, h3, h4, h5, li, ul, ol, input{
                 left: 0;
                 right: 0;
                 bottom: -69px;
-                z-index: -1;
+                z-index: -10;
             }
 .fixed-content{
 	position: fixed;
