@@ -3,10 +3,18 @@ html, body, h1, h2, h3, h4, h5, li, ul, ol, input{
 	margin: 0;
 	padding: 0;
 }
+html{
+	height: 100%;
+	width: 100%;
+}
 body{
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family:Helvetica, Arial, sans-serif;
 	background: url('images/space.jpg') no-repeat center center fixed;
 	background-size: 100% 100%;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    bottom: 0;
 }
 .fixed-content{
 	position: fixed;
@@ -195,7 +203,6 @@ input[type=checkbox]{
 	width: 20px;
 	top: 17px;
 	left: 6px;
-	z-index: -1;
 }
 .testimony{
 	margin: 50px 0 0 0;
@@ -231,20 +238,17 @@ input[type=checkbox]{
 }
 .submit-page{
 	background-color: hsla(0, 100%, 0%, 1);
-	margin-left: -300px;
-	margin-top: -200px;
-	position: fixed;
+	margin: 150px 300px 50px 0;
+	position: static;
 	width: 600px;
 	border: 2px solid #fff;
 	border-radius: 50px;
-	float: right;
-	top: 50%;
-	left: 50%;
-	clear: both;
 	display: none;
-}
+	float: right;
+    }
 .submit-page button{
 	display: block;
+	position: relative;
 	border-radius: 20px;
 	font-size: 20px;
 	background-color: #fff;
@@ -263,6 +267,12 @@ input[type=checkbox]{
 	text-align: center;
 	font-size: 20px;
 	color: #79859E;
+}
+.prepping-flight{
+	text-align: center;
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 50px;
 }
 .submit-page .details-below{
 	font-size: 16px;
@@ -334,6 +344,12 @@ input[type=checkbox]{
 	text-shadow: 0 0 10px #000;
 	padding: 5px;
 }
+.loader{
+	background: url('images/loader.gif')no-repeat center center;
+	width: 90%;
+	margin: 50px auto;
+	height: 30px;
+}
 
 @media screen and (max-width: 1300px){
 	.main-content{
@@ -341,6 +357,9 @@ input[type=checkbox]{
 	width: 800px;
 	margin: 140px 50px 0 0;
 }
+.submit-page{
+	margin: 150px 200px 50px 0;
+    }
 }
 
 @media screen and (max-width: 1150px){

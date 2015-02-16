@@ -29,9 +29,15 @@ $(document).ready(function(){
 	});
 
 	$('.submit-page .continue').click(function(){
-		$('.submit-page').hide();
-		$('.main-content').show();
-		$('.side-options').show();
+		$('.submit-page').empty();
+		$('.submit-page').prepend($('<div class=\'loader\'> new div </div>'));
+		$('.submit-page').append($('<h2 class=\'prepping-flight\'> Your flight is being prepared... </h2>'));
+		setTimeout(function(){
+			$('.submit-page').hide();
+			$('.main-content').fadeIn(1000);
+			$('.side-options').fadeIn(1000);
+		},2000)
+	
 	});
 
 
@@ -43,7 +49,7 @@ $(document).ready(function(){
 		if(myDestination!=0&myPassNumber!=0&myVehicle!=0&myDate!=''&$('.checked').is(':checked')){
 			$('.main-content').hide();
 			if($('body').width() < 1150){
-				$('.side-options').hide();
+				$('.side-options, .side-drop').hide();
 			}
 			
 
@@ -115,6 +121,7 @@ function resize(){
 	if($('body').width() < 1150){
 	
 	}else{
+		$('.side-options, .side-drop').show();
 		$('.main-content').css({'padding-top':0+'px'});
 	}
 }
