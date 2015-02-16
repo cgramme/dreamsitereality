@@ -14,7 +14,8 @@ body{
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    bottom: 0;
+    top: 0;
+    bottom: -69px;
 }
 .fixed-content{
 	position: fixed;
