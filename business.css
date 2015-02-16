@@ -4,21 +4,16 @@ html, body, h1, h2, h3, h4, h5, li, ul, ol, input{
 	padding: 0;
 }
 
-html{
-	font-family:Helvetica, Arial, sans-serif;
-	background: url('images/space.jpg') no-repeat center auto fixed;
-	background-size: 100% 100%;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: -69px;
-}
-body{
-	margin-bottom: 69px;
-}
+#background {
+                background: url('images/space.jpg') no-repeat fixed;
+                position: fixed;
+                background-size: 100% auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: -69px;
+                z-index: -1;
+            }
 .fixed-content{
 	position: fixed;
 	width: 100%;
