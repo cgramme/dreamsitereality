@@ -4,17 +4,20 @@ html, body, h1, h2, h3, h4, h5, li, ul, ol, input{
 	padding: 0;
 }
 html{
-	border: 2px solid red;
+	height: 100%;
+	width: 100%;
+	font-family:Helvetica, Arial, sans-serif;
+}
+
+#background{
 	background: url('images/space.jpg') no-repeat fixed;
+	position: fixed;
 	background-size: 100% 100%;
                 top: -69px;
                 left: 0;
                 right: 0;
                 bottom: -69px;
                 z-index: -10;
-}
-body{
-	font-family:Helvetica, Arial, sans-serif;
 }
 .fixed-content{
 	position: fixed;
