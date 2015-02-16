@@ -9,10 +9,7 @@ html{
 #background {
                 background: url('images/space.jpg') no-repeat center center fixed;
                 position: fixed;
-                background-size: 100% auto;
-                -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+                background-size: auto 100%;
                 top: 0;
                 left: 0;
                 right: 0;
