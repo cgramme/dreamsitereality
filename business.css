@@ -7,9 +7,9 @@ html{
 	font-family:Helvetica, Arial, sans-serif;
 }
 #background {
-                background: url('images/space.jpg') no-repeat center center fixed;
+                background: url('images/space.jpg') no-repeat fixed;
                 position: fixed;
-                background-size: auto 100%;
+                background-size: 100% 100%;
                 top: 0;
                 left: 0;
                 right: 0;
