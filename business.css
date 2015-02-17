@@ -42,10 +42,18 @@ body{
 	padding: 5px;
 	box-shadow: 0 0 15px #000;
 	text-shadow: 0 0 1px #000;
+	cursor: pointer;
 }
 .header .fa-undo{
 	color: #fff;
 	text-shadow: 0 0 15px #000;
+}
+.rocketIcon{
+	float:right;
+	margin: 30px;
+	height: 100px;
+	width: 100px;
+	display: none;
 }
 .side-drop{
 	width: 150px;
@@ -109,6 +117,30 @@ ul li{
 	background-color: #fff;
 	color: #000;
 }
+.termsAndConditions{
+	color: blue;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.termsPage{
+	position: fixed;
+	border: 2px solid #fff;
+	background-color: #000;
+	border-radius: 20px;
+	width: 200px;
+	color: #fff;
+	top: 150px;
+	left: 50px;
+	z-index: 5;
+	padding: 15px;
+	display: none;
+}
+.termsPage .exitTerms{
+	border-radius: 5px;
+	margin: 0 auto;
+	display: block;
+	cursor: pointer;
+}
 .hover-on{
 	background-color: #fff;
 	color: #000;
@@ -154,6 +186,7 @@ ul li{
 	text-shadow: 0 0 20px #000;
 	padding: 5px;
 	font-weight: bold;
+	cursor: pointer;
 }
 select, input{
 	display: block;
@@ -368,6 +401,10 @@ input[type=checkbox]{
 
 @media screen and (max-width: 1150px){
 
+	.rocketIcon{
+		display: block;
+	}
+
 	.main-content{
 		float: none;
 		margin: 0 auto;
@@ -426,6 +463,10 @@ input[type=checkbox]{
 }
 
 @media screen and (max-width: 850px){
+
+	.rocketIcon{
+		display: none;
+	}
 	.main-content{
 		float: none;
 		margin: 0 auto;

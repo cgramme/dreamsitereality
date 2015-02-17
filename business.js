@@ -44,6 +44,14 @@ $(document).ready(function(){
 	
 	});
 
+	$('.termsAndConditions').click(function(){
+		$('.termsPage').slideDown();
+	});
+
+	$('.exitTerms').click(function(){
+		$('.termsPage').slideUp();
+	});
+
 
 	$('.submit').click(function(){
 		var myDestination = $('.destination').val();
