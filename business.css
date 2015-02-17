@@ -3,6 +3,10 @@ html, body, h1, h2, h3, h4, h5, li, ul, ol, input{
 	margin: 0;
 	padding: 0;
 }
+html{
+	height: 100%;
+	width: 100%;
+}
 
 body{
 	font-family:Helvetica, Arial, sans-serif;
@@ -11,6 +15,7 @@ body{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  bottom: 0;
 }
 .fixed-content{
 	position: fixed;
