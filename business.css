@@ -8,6 +8,10 @@ html{
 	width: 100%;
 	font-family:Helvetica, Arial, sans-serif;
 }
+#main-content{
+	position: relative;
+	z-index: 2;
+}
 
 #background{
 	background: url('images/space.jpg') no-repeat fixed;
@@ -17,11 +21,12 @@ html{
                 left: 0;
                 right: 0;
                 bottom: -69px;
-                z-index: -20;
+                z-index: 0;
 }
 .fixed-content{
 	position: fixed;
 	width: 100%;
+	z-index: 5;
 }
 .header img{
 	width: 50%;
@@ -80,11 +85,9 @@ html{
 	overflow: hidden;
 }
 .main-content{
-	position: relative;
 	float: right;
 	width: 800px;
 	margin: 140px 200px 0 0;
-	z-index: 10;
 }
 .side-options ul{
 	position: absolute;
