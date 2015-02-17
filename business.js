@@ -40,7 +40,7 @@ $(document).ready(function(){
 			$('.submit-page').empty();
 			$('.submit-page').prepend($submitClone);
 			
-		},2000)
+		},3000)
 	
 	});
 

@@ -8,6 +8,10 @@ body{
 	font-family:Helvetica, Arial, sans-serif;
 	background: url('images/space.jpg') no-repeat fixed;
 	background-size: 100% 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
 }
 .fixed-content{
 	position: fixed;
