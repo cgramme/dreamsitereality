@@ -84,6 +84,7 @@ html{
 	float: right;
 	width: 800px;
 	margin: 140px 200px 0 0;
+	z-index: 10;
 }
 .side-options ul{
 	position: absolute;
