@@ -11,13 +11,10 @@ html{
 body{
 	font-family:Helvetica, Arial, sans-serif;
 	background: url('images/space.jpg') no-repeat fixed;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  top: 0;
-  right: 0;
-  left: 0;
+	-webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   bottom: 0;
 }
 .fixed-content{
