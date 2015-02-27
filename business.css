@@ -1,5 +1,5 @@
 
-html, body, h1, h2, h3, h4, h5, li, ul, ol, input{
+html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select{
 	margin: 0;
 	padding: 0;
 }
@@ -11,10 +11,13 @@ html{
 body{
 	font-family:Helvetica, Arial, sans-serif;
 	background: url('images/space.jpg') no-repeat fixed;
-	-webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  background-size: 100% 100%;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  left: 0;
   bottom: 0;
 }
 .fixed-content{
@@ -46,11 +49,25 @@ body{
 	text-shadow: 0 0 15px #000;
 }
 .rocketIcon{
-	float:right;
-	margin: 30px;
-	height: 100px;
+	position: absolute;
+	background: url('images/rocket2.png');
+	-webkit-animation: rocket 1s steps(8) infinite;
+	animation: rocket 1s steps(8) infinite;
+	margin-right: 50px;
+	bottom: 0;
+	right: 0;
 	width: 100px;
+	height: 200px;
 	display: none;
+}
+@-webkit-keyframes rocket {
+	from{ background-position: 0 0}
+	to{ background-position: -800px 0}
+}
+
+@keyframes rocket {
+	from{ background-position: 0 0}
+	to{ background-position: -800px 0}
 }
 .side-drop{
 	width: 150px;
@@ -169,21 +186,33 @@ ul li{
 }
 
 .nav-info h3{
-	color: #fff;
+	color: #d3c39b;
 	font-size: 25px;
 }
 .nav-info h4, h5{
 	color: #fff;
 	margin: 15px 0 3px 0;
 }
+.nav-info h5 {
+	margin: 0;
+}
+.nav-info .space{
+	padding-left: 5px;
+}
+.nav-info #terms {
+	width: 280px;
+	padding: 10px;
+}
 .nav-info button{
-	margin: 10px 0 0 0;
-	border-radius: 10px;
+	float: right;
+	border-radius: 50%;
 	background-color: #fff;
 	text-shadow: 0 0 20px #000;
-	padding: 5px;
+	font-size: 12px;
 	font-weight: bold;
 	cursor: pointer;
+	width: 50px;
+	height: 50px;
 }
 select, input{
 	display: block;
@@ -250,11 +279,15 @@ input[type=checkbox]{
 .testimony img{
 	height: 150px;
 	width: 150px;
-	border-radius: 100%;
+	border-radius: 50%;
 	border: 5px solid #fff;
 	float: left;
 	margin: 10px;
 	display: inline-block;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .testimony h4{
 }
@@ -385,6 +418,40 @@ input[type=checkbox]{
 	height: 30px;
 }
 
+.logo{
+	background: url('images/intergalacticLogo.png')no-repeat center center;
+	background-size: 100% 100%;
+	height: 60px;
+	width: 60%;
+	display: none;
+}
+
+#destinations, #passengers, #vehicle, #date, #terms {
+	border-radius: 10px;
+	border: 1px solid #000;
+	background-color: hsla(0, 100%, 0%, 0.7);
+	margin-top: 5px;
+	box-shadow: 0 0 8px 0 #fff;
+
+}
+.nav-info select, .nav-info input {
+	border: 1px solid #fff;
+	height: 20px;
+}
+
+.nav-info h5{
+	text-shadow: 0 0 20px #000;
+}
+
+.nav-info i {
+	position: relative;
+	font-size: 13px;
+	color: #ff0000;
+	top: 20px;
+	float: right;
+
+}
+
 @media screen and (max-width: 1300px){
 	.main-content{
 	float: right;
@@ -397,6 +464,17 @@ input[type=checkbox]{
 }
 
 @media screen and (max-width: 1150px){
+
+	.logo{
+	background-size: 100% 100%;
+	height: 60px;
+	width: 60%;
+	display: block;
+}
+
+	.header{
+		display: none;
+	}
 
 	.rocketIcon{
 		display: block;
@@ -435,6 +513,8 @@ input[type=checkbox]{
 	position: relative;
 	background-color: #0a0600;
 	border-bottom: 1px solid #fff;
+	background: url('images/metal_texture.jpg');
+    	background-size: 100% 100%;
     }
     #terms{
     	width: 200px;
@@ -449,6 +529,9 @@ input[type=checkbox]{
     }
     
     .nav-info{
+
+    	margin-top: 10px;
+    	margin-bottom: 10px;
     	padding: 0;
     	position: relative;
     }
@@ -460,6 +543,12 @@ input[type=checkbox]{
 }
 
 @media screen and (max-width: 850px){
+
+	.logo{
+	background-size: 100% 100%;
+	height: 60px;
+	width: 90%;
+}
 
 	.rocketIcon{
 		display: none;
@@ -497,6 +586,12 @@ input[type=checkbox]{
 }
 
 @media screen and (max-width: 600px){
+
+	.logo{
+	background-size: 100% 100%;
+	height: 60px;
+	width: 100%;
+}
 	
 	.header img{
 		width: 100%;
