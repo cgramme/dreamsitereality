@@ -52,6 +52,27 @@ $(document).ready(function(){
 		$('.termsPage').slideUp();
 	});
 
+	
+//change red/green dot if option is selected
+	$('select').on('change', function() {
+  if($(this).val() != 0){
+  		$(this).siblings('.fa').css({'color':'#00ff00'});
+  }else{
+  	    $(this).siblings('.fa').css({'color':'#ff0000'});
+  } 
+});
+
+	$('#date-selected').on('change', function() {
+  if($(this).val() != ''){
+  		$(this).siblings('.fa').css({'color':'#00ff00'});
+  }else{
+  	    $(this).siblings('.fa').css({'color':'#ff0000'});
+  } 
+});
+
+
+
+
 
 	$('.submit').click(function(){
 		var myDestination = $('.destination').val();

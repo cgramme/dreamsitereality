@@ -1,5 +1,5 @@
 
-html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select{
+html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div{
 	margin: 0;
 	padding: 0;
 }
@@ -70,10 +70,13 @@ body{
 	to{ background-position: -800px 0}
 }
 .side-drop{
+	top: -100px;
+	position: relative;
 	width: 150px;
 	height: 2000px;
 	background-color: #0a0600;
 	border-right: 5px solid #fff;
+	z-index: -10;
 }
 .side-border{
 	border-left: 300px solid #0a0600;
@@ -98,7 +101,7 @@ body{
 .side-options{
 	margin-top: 0px;
 	width:480px;
-	height: 400px;
+	height: 500px;
 	position: relative;
 	overflow: hidden;
 }
@@ -189,22 +192,23 @@ ul li{
 	color: #d3c39b;
 	font-size: 25px;
 }
-.nav-info h4, h5{
+.nav-info h4{
 	color: #fff;
-	margin: 15px 0 3px 0;
 }
 .nav-info h5 {
+	color: #fff;
 	margin: 0;
 }
 .nav-info .space{
 	padding-left: 5px;
 }
 .nav-info #terms {
-	width: 280px;
-	padding: 10px;
+	padding: 5px;
+	width: 130px;
+}
+.nav-info #terms-submit {
 }
 .nav-info button{
-	float: right;
 	border-radius: 50%;
 	background-color: #fff;
 	text-shadow: 0 0 20px #000;
@@ -216,11 +220,13 @@ ul li{
 }
 select, input{
 	display: block;
-	width:130px;
+	width:110px;
 	border-radius: 10px;
+	font-size: 10px;
 }
-input[type=checkbox]{
-	width:20px;
+#terms-submit input[type=checkbox]{
+	margin-top: 5px;
+	width:15px;
 }
 .main-content .destinations{
 	border: 1px solid #fff;
@@ -229,6 +235,7 @@ input[type=checkbox]{
 	background-color: hsla(0, 100%, 0%, 0.7);
 	z-index: -2;
 	position: relative;
+	box-shadow: 0 0 50px 10px #000;
 }
 .main-content h1{
 	color: #fff;
@@ -275,6 +282,7 @@ input[type=checkbox]{
 	background-color: hsla(0, 100%, 0%, 0.7);
 	z-index: -2;
 	position: relative;
+	box-shadow: 0 0 50px 10px #000;
 }
 .testimony img{
 	height: 150px;
@@ -304,7 +312,7 @@ input[type=checkbox]{
 	clear: both;
 }
 .submit-page{
-	background-color: hsla(0, 100%, 0%, 1);
+	background-color: hsla(0, 100%, 0%, 0.7);
 	margin: 150px 300px 50px 0;
 	position: static;
 	width: 600px;
@@ -313,6 +321,7 @@ input[type=checkbox]{
 	display: none;
 	float: right;
     }
+
 .submit-page button{
 	display: block;
 	position: relative;
@@ -426,13 +435,19 @@ input[type=checkbox]{
 	display: none;
 }
 
-#destinations, #passengers, #vehicle, #date, #terms {
+#destinations, #passengers, #vehicle, #date {
+	width: 130px;
+	display: block;
 	border-radius: 10px;
 	border: 1px solid #000;
 	background-color: hsla(0, 100%, 0%, 0.7);
-	margin-top: 5px;
 	box-shadow: 0 0 8px 0 #fff;
-
+	margin-top: 15px;
+	padding-top: 10px;
+}
+#red-button{
+	padding: 5px;
+	margin-top: 10px;
 }
 .nav-info select, .nav-info input {
 	border: 1px solid #fff;
@@ -444,11 +459,14 @@ input[type=checkbox]{
 }
 
 .nav-info i {
+	text-shadow: 0 0 10px #fff;
 	position: relative;
-	font-size: 13px;
+	font-size: 10px;
 	color: #ff0000;
-	top: 20px;
+	top: 0;
 	float: right;
+	margin: 5px;
+
 
 }
 
@@ -464,6 +482,42 @@ input[type=checkbox]{
 }
 
 @media screen and (max-width: 1150px){
+
+	#destinations, #passengers, #vehicle, #date{
+	display: inline-block;
+	border-radius: 10px;
+	border: 1px solid #000;
+	background-color: hsla(0, 100%, 0%, 0.7);
+	box-shadow: 0 0 8px 0 #fff;
+	margin: 0 20px 10px 0;
+	padding-top: 15px;
+}
+
+.nav-info i {
+	margin: 0;
+}
+
+#terms, #red-button {
+	display: inline-block;
+	width: 130px;
+	
+}
+#terms {
+	float: left;
+	margin-right: 20px;
+}
+#terms-submit {
+	width: 310px;
+	vertical-align: top;
+	display: block;
+	border-radius: 10px;
+	border: 1px solid #000;
+	background-color: hsla(0, 100%, 0%, 0.7);
+	box-shadow: 0 0 8px 0 #fff;
+}
+
+
+
 
 	.logo{
 	background-size: 100% 100%;
@@ -490,7 +544,7 @@ input[type=checkbox]{
 	}
 
 	.submit-page{
-	background-color: hsla(0, 100%, 0%, 1);
+	background-color: hsla(0, 100%, 0%, 0.7);
 	margin: 10px auto;
 	position: static;
 	width: 600px;
@@ -515,11 +569,9 @@ input[type=checkbox]{
 	border-bottom: 1px solid #fff;
 	background: url('images/metal_texture.jpg');
     	background-size: 100% 100%;
+    	box-shadow: 0 0 50px 10px #000;
     }
-    #terms{
-    	width: 200px;
-    	display: inline-block;
-    }
+   
     #group-one{
     	display: inline-block;
     }
@@ -529,7 +581,6 @@ input[type=checkbox]{
     }
     
     .nav-info{
-
     	margin-top: 10px;
     	margin-bottom: 10px;
     	padding: 0;
@@ -569,20 +620,18 @@ input[type=checkbox]{
 		float: left;
 	}
 	#destinations, #vehicle, #passengers, #date{
-		margin-left: 20px;
-		clear: both;
+		width: 130px;
+
 	}
 	
 	#terms-submit{
 		display: inline-block;
-		margin-left: 20px;
+		width: auto;
 	}
 	.header img{
 		width: 90%;
 	}
 
-
-	
 }
 
 @media screen and (max-width: 600px){
@@ -591,7 +640,16 @@ input[type=checkbox]{
 	background-size: 100% 100%;
 	height: 60px;
 	width: 100%;
-}
+    }
+    #destinations, #vehicle, #passengers, #date{
+    	width: 110px;
+	}
+	#terms, #red-button {
+	width: 90px;
+	}
+	#terms-submit{
+
+	}
 	
 	.header img{
 		width: 100%;
@@ -625,7 +683,7 @@ input[type=checkbox]{
 		width: 120px;
 	}
 	.submit-page{
-	background-color: hsla(0, 100%, 0%, 1);
+	background-color: hsla(0, 100%, 0%, 0.7);
 	margin: 10px auto;
 	position: static;
 	width: 98%;

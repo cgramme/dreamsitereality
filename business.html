@@ -5,9 +5,6 @@
 	<link rel='stylesheet' href='business.css' media="screen">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js" type='text/javascript'></script>
-	<script src="jquery.countdown.js"></script>
-	<script type='text/javascript' src='business.js'></script>
 </head>
 <body>
 	<div class='termsPage'><p><b style='bold'>Intergalactic Adventures terms and conditions:</b><br> We take no responibility for any injury you may be subject to during your travels with us.</p>
@@ -31,7 +28,6 @@
 			<div class='rocketIcon'></div>
 				<div class='logo'></div>
 				<h3>Flight setup</h3>
-				<div id='group-one'>
 				<div id='destinations'>
 				<i class='fa fa-circle' id='light1'></i>
 				<h4 class='space'>Destination</h4>
@@ -58,7 +54,6 @@
 					<option>8</option>
 				</select>
 				</div>
-				</div>
 				<div id='vehicle'>
 				<i class='fa fa-circle' id='light3'></i>
 				<h4 class='space'>Vehicle</h4>
@@ -74,20 +69,22 @@
 				</div>
 				<div id='date'>
 				<i class='fa fa-circle' id='light4'></i>
-				<h4 class='space'>Launch date</h4>
-				<input class='date' type='date'>
+				<h4 class='space'>Date</h4>
+				<input id='date-selected' class='date' type='date'>
 				</div>
 				<div id='terms-submit'>
 				<div id='terms'>
-				<button class='submit' type='button'>Submit</button>
 				<h5>Do you agree to the<br><span class='termsAndConditions'>terms and conditions</span></h5>
 				<input class='checked' type='checkbox'>
-				
 				</div>
+				<div id='red-button'>
+				<button class='submit' type='button'>Submit</button>
+				</div>
+				<div class='clear'></div>
 				</div>
 				
 
-
+				<div class='clear'></div>
 			</div>
 			
 			<ul class='nav-bar'>
@@ -158,5 +155,9 @@
 		<h5>Disclaimer: We take no responsibility for any harm you may be subject to during your travels. This includes but is not limited to... Freezing, burning, loss of oxygen, disease, sickness, starving, radiation, suction into black hole, explosion etc... We stand proudly by our 0.06% succes rate!  </h5>
 	</div>
 	<div id="background"></div>
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js" type='text/javascript'></script>
+	<script src="jquery.countdown.js"></script>
+	<script type='text/javascript' src='business.js'></script>
 </body>
 </html>
