@@ -147,6 +147,7 @@ $(document).ready(function(){
 });
 
 $(window).resize(function(){
+	$('body').height(jQuery(window).height() + 60);
 	resize();
 });
 
@@ -158,3 +159,4 @@ function resize(){
 		$('.main-content').css({'padding-top':0+'px'});
 	}
 }
+
