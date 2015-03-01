@@ -489,12 +489,16 @@ select, input{
 	border: 1px solid #000;
 	background-color: hsla(0, 100%, 0%, 0.7);
 	box-shadow: 0 0 8px 0 #fff;
-	margin: 0 20px 10px 0;
+	margin: 0 0 10px 20px;
 	padding-top: 15px;
 }
 
 .nav-info i {
 	margin: 0;
+}
+
+.flight-setup {
+	margin-bottom: 10px;
 }
 
 #terms, #red-button {
@@ -514,6 +518,7 @@ select, input{
 	border: 1px solid #000;
 	background-color: hsla(0, 100%, 0%, 0.7);
 	box-shadow: 0 0 8px 0 #fff;
+	margin-left: 20px;
 }
 
 
