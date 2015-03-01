@@ -159,7 +159,7 @@ function resize(){
 	}
 }
 
-$('body').on('touchmove', function() { 
+$(window).on('touchmove', function() { 
     $('body').height($(window).height());
 });
 
