@@ -5,8 +5,6 @@ var headerHeight, navHeight, $submitClone;
 
 $(document).ready(function(){
 
-	$('body').height($(window).height() + 60);
-
 	$('.nav-info').fadeIn(2000);
 	
 
@@ -149,7 +147,6 @@ $(document).ready(function(){
 });
 
 $(window).resize(function(){
-	$('body').height($(window).height() + 60);
 	resize();
 });
 
