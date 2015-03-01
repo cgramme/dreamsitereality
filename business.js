@@ -152,10 +152,14 @@ $(window).resize(function(){
 
 function resize(){
 	if($('body').width() < 1150){
-	
+		$('body').height($(window).height + 1000);
 	}else{
 		$('.side-options, .side-drop').show();
 		$('.main-content').css({'padding-top':0+'px'});
 	}
 }
+
+$('body').on('touchmove', function() { 
+    $('body').height($(window).height());
+});
 
