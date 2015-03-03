@@ -9,12 +9,13 @@ html{
 }
 
 body{
+	overflow-x: hidden;
 	font-family:Helvetica, Arial, sans-serif;
 	background: url('images/space.jpg') no-repeat fixed;
-/*	-webkit-background-size: cover;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;  */
-  background-size: 100% 100%;
+  -o-background-size: cover;
+  background-size: cover;
   top: 0;
   right: 0;
   left: 0;
@@ -236,7 +237,14 @@ select, input{
 	z-index: -2;
 	position: relative;
 	box-shadow: 0 0 50px 10px #000;
+	margin-bottom: -60px;
 }
+.shade {
+	padding: 10px;
+	margin-bottom: 10px;
+		background-color: hsla(0, 100%, 0%, 0.3);
+		border-radius: 30px;
+	}
 .main-content h1{
 	color: #fff;
 	text-align: center;
@@ -275,14 +283,15 @@ select, input{
 	left: 6px;
 }
 .testimony{
-	margin: 50px 0 0 0;
 	border: 1px solid #fff;
 	border-radius: 50px 50px 50px 50px;
-	padding: 0px 20px 40px 20px;
+	padding: 20px 20px 40px 20px;
 	background-color: hsla(0, 100%, 0%, 0.7);
 	z-index: -2;
 	position: relative;
 	box-shadow: 0 0 50px 10px #000;
+	margin-top: -60px;
+	margin-bottom: 20px;
 }
 .testimony img{
 	height: 150px;
@@ -290,12 +299,14 @@ select, input{
 	border-radius: 50%;
 	border: 5px solid #fff;
 	float: left;
-	margin: 10px;
+	margin: 15px;
+	margin-top: 0;
 	display: inline-block;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  box-shadow: 0 0 10px 5px #000;
 }
 .testimony h4{
 }
@@ -303,10 +314,16 @@ select, input{
 	margin: 10px 0 0 25px;
 }
 .testimony h3{
-	padding-top: 20px;
+	padding-top: 0px;
 }
 .a-testimony{
+	margin-top: 10px;
+	background-color: hsla(0, 100%, 0%, 0.2);
+	padding-right: 10px;
 	border: 1px solid transparent;
+	border-right: 5px solid #d3c39b;
+	border-radius: 50px;
+
 }
 .clear{
 	clear: both;
@@ -466,9 +483,22 @@ select, input{
 	top: 0;
 	float: right;
 	margin: 5px;
-
-
 }
+
+#rocket-anim {
+	position: relative;
+	-ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+	background: url('images/rocket2.png');
+	-webkit-animation: rocket 0.5s steps(8) infinite;
+	animation: rocket 0.5s steps(8) infinite;
+	width: 100px;
+	height: 200px;
+	z-index: -10;
+	margin: 0 auto;
+}
+
 
 @media screen and (max-width: 1300px){
 	.main-content{
@@ -547,6 +577,7 @@ select, input{
 		margin-top: 20px;
 		border-radius: 50px;
 	}
+
 
 	.submit-page{
 	background-color: hsla(0, 100%, 0%, 0.7);
@@ -683,7 +714,6 @@ select, input{
 		font-size: 20px;
 	}
 	.testimony{
-		padding: 0px 0px 30px 0px;
 	}
 	.testimony img{
 		height: 120px;

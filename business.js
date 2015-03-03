@@ -1,9 +1,18 @@
 var headerHeight, navHeight, $submitClone;
 
-
+function rocketLeft() {
+   	 $("#rocket-anim").css({'transform':'rotate(270deg)'}).animate({left: "-100%"}, 20000, "swing", rocketRight);
+    }
+	function rocketRight() {
+   	 $("#rocket-anim").css({'transform':'rotate(90deg)'}).animate({left: "100%"}, 20000, "swing", rocketLeft);
+	}
 
 
 $(document).ready(function(){
+
+	
+	rocketRight();
+    
 
 	$('.nav-info').fadeIn(2000);
 	
@@ -136,6 +145,7 @@ $(document).ready(function(){
 
 		}else{
 			alert('Select all categories and agree to the terms...');
+			
 		}
 
 		
