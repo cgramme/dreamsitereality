@@ -152,7 +152,6 @@ nav .reali-ty{
 	}
 	nav.navbar{
 		min-height: 70px;
-		max-height: 70px;
 	}
 }
 @media screen and (max-width: 360px){
