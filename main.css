@@ -12,41 +12,37 @@ body{
 	background-size: 100% 100%;
 
 }
-
-
-header{
+nav.navbar {
+	z-index: 10;
 	padding: 5px 0 5px 20px;
 	margin:0px 0 50px 0;
 	background-color: hsla(209, 100%, 20%, 0.7);
 	color: #fff;
-	height: 135px;
+	min-height: 150px;
 	border-bottom: 2px solid white;
 	box-shadow: 0 0 15px 0 #000;
-	position: relative;
-	
-}
-header ul{
-	position: absolute;
-	bottom: -1px;
-	right: 0;
 }
 
-header a{
+.navbar-toggle {
+}
+.navbar ul {
+}
+
+
+
+nav a{
 	color: #fff;
 	font-weight: bold;
 }
 
-header h1{
+nav h1{
 	font-size: 40px;
 	text-decoration: underline;
 	text-shadow: 0 0 20px #000;
 	display: none;
+
 }
-header .navbar-toggle{
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}
+
 .footer{
 	padding-top: 10px;
 	background-color: hsla(209, 100%, 20%, 0.8);
@@ -56,12 +52,12 @@ header .navbar-toggle{
 	border-top: 2px solid #fff;
 	box-shadow: 0 0 15px #000;
 }
-header h2{
-	
+nav h2{
+	float: left;
 	font-size: 25px;
 	
 }
-header .btn-success{
+nav .btn-success{
 	position: relative;
 	top: 7px;
 	border: 2px solid #fff;
@@ -71,16 +67,23 @@ header .btn-success{
 .footer h4{
 	font-size: 18px;
 	padding: 0px;
+	margin: 0;
 	border-radius: 7px;
 }
 .footer h4:hover{
-	font-size: 22px;
-	margin-top:7px;
+	color: yellow;
+	cursor: pointer;
 }
-header .navbar-toggle{
+.footer .col-sm-3, .footer .col-xs-3 {
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-right: 0;
+	margin-left: 0;
+}
+nav .navbar-toggle{
 	border: 1px solid #fff;
 }
-header .icon-bar{
+nav .icon-bar{
 	background-color: #fff;
 }
 
@@ -94,28 +97,78 @@ header .icon-bar{
 }
 .content-box:hover{
 	box-shadow: 0px 0px 5px 0px #000000;
+	cursor: pointer;
 }
-header .fa-lightbulb-o{
+.content-box {
+	position: relative;
+}
+nav .fa-lightbulb-o{
 	position: relative;
 	left: -14px;
 	top: -32px;
 	color: #ffffff;
 	font-size: 20px;
 }
-header .fa-comment{
+nav .fa-comment{
 	position: relative;
 	top: -40px;
 	color: #fff;
 	font-size: 20px;
 }
-header .fa-male{
+nav .fa-male{
 	position: relative;
 	font-size: 30px;
 	top: 0px;
 }
-header .reali-ty{
+nav .reali-ty{
 	position: relative;
 	left: -10px;
+}
+@media screen and (max-width: 600px){
+	.footer h4{
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 530px){
+	nav h2 {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 450px){
+	.footer h4 {
+		font-size: 12px;
+	}
+	nav h1{
+		float: none;
+	}
+}
+@media screen and (max-width: 400px){
+	nav h1{
+		font-size: 30px;
+		float: left;
+	}
+	nav h2{
+		opacity: 0;
+	}
+	nav.navbar{
+		min-height: 70px;
+		max-height: 70px;
+	}
+}
+@media screen and (max-width: 360px){
+	nav h1{
+		font-size: 25px;
+	}
+}
+@media screen and (max-width: 320px){
+	nav h1 {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 290px){
+	nav h1 {
+		font-size: 17px;
+	}
 }
 
 
